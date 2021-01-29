@@ -9,4 +9,5 @@ Pizza.prototype.totalPrice = function() {
   let sumPrice = (this.size = this.cheese = this.topping)
   return sumPrice
 }
+
 // UI Logic
