@@ -25,6 +25,10 @@ Test: "It will return undefined if Pizza object is created with no key values."
 
 Expect: (Pizza().toEqual({Undefined}))
 
+Test: "it will return "Pizza.size: 12 inch" if user inputs let Pizza = new Pizza(12 inch)
+
+Expect: (Pizza("12 inch").toEqual({size: 12 inch}))
+
 ## Setup/Installation Requirements
 
 * Clone this repository to your Desktop.
