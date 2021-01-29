@@ -2,9 +2,8 @@ body {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj5pgBR_FgrogqqnJs_HTaIog3fIK22QKKUA&usqp=CAU);
 }
 
-.user-prompt {
+.red-text {
   color: red;
-  padding: 5px;
 }
 
 .jumbotron {
@@ -16,6 +15,6 @@ body {
   color: white;
 }
 
-#output {
-  color: red;
+#hidden-price {
+  display: none;
 }

@@ -18,7 +18,7 @@
     <form id="pizzaForm">
 
       <div class="form-group">
-        <p class="user-prompt">Select the size of your pie:</p>
+        <p class="red-text">Select the size of your pie:</p>
         <select class="form-control" id="sizePrice">
           <option selected="selected"></option>
           <option value="2">Large (12 inch)</option>
@@ -28,7 +28,7 @@
       </div>
 
       <div class="form-group">
-        <p class="user-prompt">Select the cheese for your pie:</p>
+        <p class="red-text">Select the cheese for your pie:</p>
         <select class="form-control" id="cheesePrice">
           <option selected="selected"></option>
           <option value="2">Mozzarella</option>
@@ -38,7 +38,7 @@
       </div>
 
       <div class="form-group">
-        <p class="user-prompt">Select the meat topping for your pie:</p>
+        <p class="red-text">Select the meat topping for your pie:</p>
         <select class="form-control" id="meatPrice">
           <option selected="selected"></option>
           <option value="2">Pepperoni</option>
@@ -48,7 +48,7 @@
       </div>
 
       <div class="form-group">
-        <p class="user-prompt">Select the veggie topping for your pie:</p>
+        <p class="red-text">Select the veggie topping for your pie:</p>
         <select class="form-control" id="veggiePrice">
           <option selected="selected"></option>
           <option value="2">Olives</option>
@@ -59,12 +59,18 @@
 
       <br>
 
-      <button type="submit" value="submit" class="btn btn-success">Calculate!</button>
+      <button type="submit" value="submit" class="btn btn-success" id="calculate">Calculate!</button>
     </form>
 
-    <p class="price-p">The price of your pizza is:</p>
-    <div id="output">
-    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card" id="hidden-price">
+          <p class="red-text">The price of your pizza is:</p>
+          <div id="output">
+          </div>
+        </div>
+      </div>
+    </div>  
 
   </div>
 </body>

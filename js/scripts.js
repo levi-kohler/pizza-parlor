@@ -20,9 +20,14 @@ $(document).ready(function() {
     let meat = parseInt($("#meatPrice").val());
     let veggie = parseInt($("#veggiePrice").val());
     let pizzaPrice = new Pizza(size,cheese,meat,veggie);
-    console.log(Pizza.pizzaPrice)
+
+    $("#calculate").click(function(e) {
+      e.preventDefault();
+      $("#hidden-price").show();
+      $("#pizzaForm").hide();
+    })
+
     $("#output").show();
     $("#output").text(pizzaPrice.totalPrice());
-
   });
 });
