@@ -21,15 +21,15 @@ $(document).ready(function() {
     let veggie = parseInt($("#veggiePrice").val());
     let pizzaPrice = new Pizza(size,cheese,meat,veggie);
 
-    $("#sizePrice").val("");
-    $("#cheesePrice").val("");
-    $("#meatPrice").val("");
-    $("#veggiePrice").val("");
-
     $("#calculate").click(function() {
       $("#hidden-price").show();
       $("#pizzaForm").hide();
     })
+
+    $("#sizePrice").val("");
+    $("#cheesePrice").val("");
+    $("#meatPrice").val("");
+    $("#veggiePrice").val("");
 
     $("#show-form").click(function() {
       $("#hidden-price").hide();
