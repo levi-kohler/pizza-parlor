@@ -18,3 +18,13 @@ body {
 #hidden-price {
   display: none;
 }
+
+#show-form {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+#show-form:hover {
+  text-decoration: underline;
+}
+
