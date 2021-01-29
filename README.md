@@ -29,6 +29,10 @@ Test: "it will return "Pizza.size: 12 inch" if user inputs let Pizza = new Pizza
 
 Expect: (Pizza("12 inch").toEqual({size: 12 inch}))
 
+Test: It will return each key-value pair for each user input of size, cheese, and topping"
+
+Expect: (Pizza("12 inch", "mozzarella", "pepperoni").toEqual({size: "12 inch", cheese: "mozzarella", topping: "pepperoni"}))
+
 ## Setup/Installation Requirements
 
 * Clone this repository to your Desktop.
