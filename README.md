@@ -21,9 +21,9 @@ This application allows the user to choose what type of pizza they want in terms
 
 Describe: Pizza(size,cheese,topping)
 
-Test:
+Test: "It will return undefined if Pizza object is created with no key values."
 
-Expect:
+Expect: (Pizza().toEqual({Undefined}))
 
 ## Setup/Installation Requirements
 
