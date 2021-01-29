@@ -3,7 +3,7 @@ function Pizza(size, cheese, meat, veggie) {
   this.size = size
   this.cheese = cheese
   this.meat = meat
-  this.veggie
+  this.veggie = veggie
 }
 
 Pizza.prototype.totalPrice = function() {
@@ -20,7 +20,9 @@ $(document).ready(function() {
     let meat = parseInt($("#meatPrice").val());
     let veggie = parseInt($("#veggiePrice").val());
     let pizzaPrice = new Pizza(size,cheese,meat,veggie);
-    $("#show-price").show
-    $("#show-price").text(pizzaPrice.totalPrice());
-  })
-})
+    console.log(Pizza.pizzaPrice)
+    $("#output").show();
+    $("#output").text(pizzaPrice.totalPrice());
+
+  });
+});
