@@ -41,7 +41,7 @@ Expect: (Pizza("12 inch", "mozzarella", "pepperoni").toEqual({size: "12 inch", 
 
 ## Known Bugs
 
-* No known bugs.
+* Button needs to be pushed twice for form to submit on first submit.
 
 ## License
 
