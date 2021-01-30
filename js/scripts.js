@@ -21,22 +21,17 @@ $(document).ready(function() {
     let veggie = parseInt($("#veggiePrice").val());
     let pizzaPrice = new Pizza(size,cheese,meat,veggie);
 
-    $("#calculate").click(function() {
-      $("#hidden-price").show();
-      $("#pizzaForm").hide();
-    })
+  $("#calculate").click(function() {
+    $("#hidden-price").show();
+    $("#pizzaForm").hide();
+  })
 
-    $("#sizePrice").val("");
-    $("#cheesePrice").val("");
-    $("#meatPrice").val("");
-    $("#veggiePrice").val("");
+  $("#show-form").click(function() {
+    $("#hidden-price").hide();
+    $("#pizzaForm").show();
+  })
 
-    $("#show-form").click(function() {
-      $("#hidden-price").hide();
-      $("#pizzaForm").show();
-    })
-
-    $("#output").show();
-    $("#output").text(pizzaPrice.totalPrice());
+  $("#output").show();
+  $("#output").text(pizzaPrice.totalPrice());
   });
 });
