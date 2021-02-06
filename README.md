@@ -19,19 +19,25 @@ This application allows the user to choose what type of pizza they want in terms
 
 ## Specs
 
-Describe: Pizza(size,cheese,topping)
+Describe: Pizza(size,cheese,meat,veggie)
 
 Test: "It will return undefined if Pizza object is created with no key values."
 
 Expect: (Pizza().toEqual({Undefined}))
 
-Test: "it will return "Pizza.size: 12 inch" if user inputs let Pizza = new Pizza(12 inch)
+Test: "It will return "Pizza.size: 12 inch" if user inputs let Pizza = new Pizza(12 inch)
 
 Expect: (Pizza("12 inch").toEqual({size: 12 inch}))
 
-Test: It will return each key-value pair for each user input of size, cheese, and topping"
+Test: "It will return each key-value pair for each user input of size, cheese, and topping"
 
 Expect: (Pizza("12 inch", "mozzarella", "pepperoni").toEqual({size: "12 inch", cheese: "mozzarella", topping: "pepperoni"}))
+
+Describe: totalPrice()
+
+Test: "It will return the total price of a pizza calculated based off of user selctions for size, cheese, meat and veggie"
+
+Expect: (totalPrice("12 inch", "mozzarella", "pepperoni", "olives").toEqual(8))
 
 ## Setup/Installation Requirements
 
