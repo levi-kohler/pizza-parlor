@@ -21,10 +21,6 @@ $(document).ready(function() {
     let veggie = parseInt($("#veggiePrice").val());
     let pizzaPrice = new Pizza(size,cheese,meat,veggie);
 
-    if ((pizzaPrice) === NaN) {
-      return "Oops! Please fill out the form to get a price for your pie."
-    }
-
   $("#calculate").click(function() {
     $("#hidden-price").show();
     $("#pizzaForm").hide();
